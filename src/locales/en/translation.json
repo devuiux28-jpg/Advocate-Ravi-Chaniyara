@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "title": "Advocate Ravi Chaniyara | Revenue & Land Legal Services in Gujarat",
+    "description": "Trusted legal guidance for land disputes, revenue matters, mutation entries, property documentation and government approvals across Gujarat."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "whyUs": "Why Choose Us",
+    "testimonials": "Testimonials",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "contact": "Contact",
+    "bookConsultation": "Book Consultation"
+  },
+  "hero": {
+    "headline": "Expert Advocate for Revenue & Land Legal Services",
+    "subheading": "Providing trusted legal guidance for land disputes, revenue matters, mutation entries, property documentation, government approvals, and legal consultation across Gujarat.",
+    "ctaPrimary": "Book Consultation",
+    "ctaSecondary": "Contact Now",
+    "stats": {
+      "experience": "10+ Years Experience",
+      "cases": "500+ Cases Solved",
+      "clients": "1000+ Happy Clients",
+      "support": "24x7 Legal Support"
+    }
+  },
+  "about": {
+    "eyebrow": "About the Advocate",
+    "title": "Two Decades of Trust in Revenue & Land Law",
+    "intro": "Advocate Ravi Chaniyara has spent over a decade guiding families, farmers, and businesses through complex revenue and land matters across Gujarat — from mutation entries at the Talati office to appeals before the Deputy Collector.",
+    "mission": {
+      "title": "Our Mission",
+      "text": "To make revenue and land law accessible, transparent, and fair for every citizen, regardless of the complexity of their case."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "To be Gujarat's most trusted name in revenue legal consultancy, known for integrity, clarity, and results."
+    },
+    "qualifications": {
+      "title": "Qualifications",
+      "items": ["LL.B., Gujarat University", "Enrolled with Bar Council of Gujarat", "Certified in Land Revenue Administration", "Member, Gujarat High Court Advocates' Association"]
+    },
+    "timeline": [
+      { "year": "2013", "text": "Enrolled as an Advocate and began practice in Civil & Revenue Law" },
+      { "year": "2016", "text": "Opened independent chambers focused on land and revenue matters" },
+      { "year": "2019", "text": "Crossed 250 successfully resolved mutation and title cases" },
+      { "year": "2023", "text": "Recognised for consistent success in Collector & Mamlatdar court representations" },
+      { "year": "2026", "text": "Serving 1000+ clients across Gujarat with a dedicated legal team" }
+    ]
+  },
+  "services": {
+    "eyebrow": "Practice Areas",
+    "title": "Comprehensive Revenue & Legal Services",
+    "subtitle": "End-to-end legal support for every stage of your land and revenue matter.",
+    "learnMore": "Learn More",
+    "items": [
+      { "title": "Revenue Matters", "desc": "Complete handling of revenue record disputes, corrections, and government filings." },
+      { "title": "Land Dispute", "desc": "Resolution of boundary, ownership, and possession disputes through negotiation or court." },
+      { "title": "Mutation Entry", "desc": "Fast and accurate mutation entry (7/12, 8-A) processing and correction support." },
+      { "title": "Property Verification", "desc": "Thorough due diligence and record verification before purchase or investment." },
+      { "title": "Title Clearance", "desc": "Clear title reports and resolution of encumbrances for smooth transactions." },
+      { "title": "NA Permission", "desc": "End-to-end assistance for Non-Agricultural land use permissions." },
+      { "title": "Revenue Appeals", "desc": "Representation in appeals before Deputy Collector and Revenue Tribunal." },
+      { "title": "RTS Matters", "desc": "Expert handling of Record of Rights to Tenancy (RTS) cases and corrections." },
+      { "title": "Collector Office Work", "desc": "Complete liaison and filing support at the District Collector's office." },
+      { "title": "Mamlatdar Cases", "desc": "Representation and documentation for cases before the Mamlatdar." },
+      { "title": "Deputy Collector Matters", "desc": "Filing and hearing representation for Deputy Collector proceedings." },
+      { "title": "Land Conversion", "desc": "Legal support for converting agricultural land for residential or commercial use." },
+      { "title": "Government Documentation", "desc": "Preparation and verification of all government-mandated land documents." },
+      { "title": "Property Registration Guidance", "desc": "Step-by-step guidance through the property registration process." },
+      { "title": "Legal Notice Drafting", "desc": "Precise, enforceable legal notices drafted for disputes and recovery." },
+      { "title": "Civil Documentation", "desc": "Drafting and vetting of affidavits, agreements, and civil documents." },
+      { "title": "Property Consultation", "desc": "One-on-one consultation for property purchase, sale, or inheritance matters." },
+      { "title": "Court Representation", "desc": "Skilled representation before civil courts and revenue tribunals." },
+      { "title": "Stamp Duty Guidance", "desc": "Accurate stamp duty calculation and compliance guidance." },
+      { "title": "Legal Opinion", "desc": "Written legal opinions on title, ownership, and compliance matters." }
+    ]
+  },
+  "whyUs": {
+    "eyebrow": "Why Choose Us",
+    "title": "Legal Support You Can Rely On",
+    "items": [
+      { "title": "Experienced Advocate", "desc": "Over a decade of focused experience in revenue and land law." },
+      { "title": "Transparent Process", "desc": "Clear timelines, honest advice, and no hidden surprises." },
+      { "title": "Affordable Fees", "desc": "Fair, transparent pricing structured around your case." },
+      { "title": "Fast Documentation", "desc": "Efficient paperwork handling to avoid unnecessary delays." },
+      { "title": "Trusted Advice", "desc": "Practical guidance rooted in real courtroom and revenue-office experience." },
+      { "title": "Complete Legal Support", "desc": "From consultation to case closure, every step handled with care." }
+    ]
+  },
+  "process": {
+    "eyebrow": "How We Work",
+    "title": "Our Working Process",
+    "steps": [
+      { "title": "Consultation", "desc": "We understand your case in detail during an initial consultation." },
+      { "title": "Document Review", "desc": "All relevant records and documents are reviewed thoroughly." },
+      { "title": "Legal Strategy", "desc": "A tailored legal strategy is prepared for the best possible outcome." },
+      { "title": "Application Filing", "desc": "Applications and petitions are filed accurately and on time." },
+      { "title": "Government Follow-up", "desc": "We handle regular follow-up with the concerned government offices." },
+      { "title": "Case Completion", "desc": "Your case is resolved and all documentation is handed over to you." }
+    ]
+  },
+  "stats": {
+    "title": "Our Track Record",
+    "cases": "Successful Cases",
+    "clients": "Happy Clients",
+    "experience": "Years Experience",
+    "success": "Success Rate"
+  },
+  "testimonials": {
+    "eyebrow": "Client Voices",
+    "title": "What Our Clients Say",
+    "googleRating": "Google Rating",
+    "items": [
+      { "name": "Kiran Patel", "location": "Ahmedabad", "text": "Resolved my mutation entry issue within weeks after it had been pending for years. Extremely professional and transparent throughout." },
+      { "name": "Meera Joshi", "location": "Rajkot", "text": "Excellent guidance on our land conversion case. Every step was explained clearly and the follow-up with the Collector's office was smooth." },
+      { "name": "Ashok Desai", "location": "Vadodara", "text": "Handled our family's land dispute with patience and skill. Highly recommend for anyone facing revenue matters in Gujarat." },
+      { "name": "Priya Chauhan", "location": "Surat", "text": "Very knowledgeable about RTS and title clearance procedures. Made a complicated process feel simple and stress-free." }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Frequently Asked Questions",
+    "title": "Have Questions? We Have Answers",
+    "items": [
+      { "q": "What documents are required for a mutation entry?", "a": "Typically the sale deed, 7/12 extract, 8-A form, identity proof, and any relevant court orders are required. We help you compile the complete document set." },
+      { "q": "How long does a land dispute case usually take?", "a": "Timelines vary by complexity, but straightforward cases are often resolved within a few months, while contested matters may take longer through the appropriate forum." },
+      { "q": "Can you help with property registration?", "a": "Yes, we provide complete guidance through registration, stamp duty calculation, and document verification." },
+      { "q": "What are your consultation fees?", "a": "Initial consultations are affordably priced and discussed transparently before any engagement begins." },
+      { "q": "Do you handle cases outside your city?", "a": "Yes, we represent clients across Gujarat, including matters before Mamlatdar, Deputy Collector, and Collector offices in various districts." },
+      { "q": "How do I book a consultation?", "a": "You can call, WhatsApp, or fill out the contact form on this website, and our team will get back to you promptly." }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Legal Insights",
+    "title": "Latest Updates & Legal Guidance",
+    "readMore": "Read More",
+    "items": [
+      { "title": "Understanding the New Revenue Record Digitisation Rules", "excerpt": "A breakdown of what Gujarat's revenue digitisation initiative means for landowners.", "date": "May 2026", "category": "Revenue Rules" },
+      { "title": "5 Common Mistakes in Mutation Entry Applications", "excerpt": "Avoid these frequent errors that delay mutation processing at the Talati office.", "date": "April 2026", "category": "Land Laws" },
+      { "title": "A Complete Guide to NA Permission in Gujarat", "excerpt": "Step-by-step overview of converting agricultural land for non-agricultural use.", "date": "March 2026", "category": "Property Guidance" }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Get In Touch",
+    "title": "Contact Us for a Consultation",
+    "subtitle": "Reach out and our team will respond within one business day.",
+    "office": "Office Address",
+    "officeAddress": "402, Sardar Chambers, Ashram Road, Ahmedabad, Gujarat 380009",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "hours": "Office Hours",
+    "hoursValue": "Mon – Sat: 10:00 AM – 7:00 PM",
+    "form": {
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you! Your message has been sent successfully.",
+      "error": "Something went wrong. Please try again or call us directly."
+    }
+  },
+  "footer": {
+    "tagline": "Trusted legal guidance for revenue and land matters across Gujarat.",
+    "quickLinks": "Quick Links",
+    "servicesTitle": "Services",
+    "contactTitle": "Contact",
+    "followUs": "Follow Us",
+    "rights": "All Rights Reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  },
+  "common": {
+    "bookConsultation": "Book Consultation",
+    "call": "Call Now",
+    "whatsapp": "WhatsApp",
+    "scrollTop": "Back to top",
+    "downloadProfile": "Download Advocate Profile",
+    "downloadBrochure": "Download Service Brochure",
+    "cookieText": "We use cookies to improve your experience on our website.",
+    "cookieAccept": "Accept",
+    "close": "Close",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  }
+}
