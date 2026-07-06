@@ -74,8 +74,8 @@ export default function Hero() {
         >
           <div className="absolute -inset-8 bg-gold/10 rounded-full blur-3xl animate-float" />
           <img
-            src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=900&auto=format&fit=crop"
-            alt="Advocate reviewing legal documents"
+            src="/first.png"
+            alt="Advocate Ravi Chaniyara"
             className="relative rounded-xl2 shadow-soft border-4 border-white/10 w-full max-w-md object-cover aspect-[4/5]"
             loading="lazy"
           />

@@ -18,9 +18,9 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <img
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=900&auto=format&fit=crop"
+              src="/advocate-profile.png"
               alt="Advocate Ravi Chaniyara"
-              className="rounded-xl2 shadow-soft w-full object-cover aspect-[4/3]"
+              className="rounded-xl2 shadow-soft w-full h-auto"
               loading="lazy"
             />
             <div className="grid sm:grid-cols-2 gap-5 mt-8">
