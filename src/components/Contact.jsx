@@ -1,15 +1,10 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
-import emailjs from '@emailjs/browser'
 import { FaMapMarkerAlt, FaPhoneAlt, FaWhatsapp, FaEnvelope, FaClock, FaPaperPlane } from 'react-icons/fa'
 
-const CONTACT_EMAIL = 'devchaniyara@gmail.com'
-
-// Replace with your own EmailJS credentials: https://www.emailjs.com/
-const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID'
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID'
-const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY'
+const CONTACT_EMAIL = 'chaniyaradev@gmail.com'
+const CONTACT_ENDPOINT = `https://formsubmit.co/ajax/${CONTACT_EMAIL}`
 
 export default function Contact() {
   const { t } = useTranslation()
@@ -18,42 +13,33 @@ export default function Contact() {
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
-  const openMailClient = () => {
-    const subject = encodeURIComponent(form.subject || 'Website contact request')
-    const body = encodeURIComponent(
-      [
-        `Name: ${form.name}`,
-        `Phone: ${form.phone}`,
-        `Email: ${form.email}`,
-        `Subject: ${form.subject}`,
-        '',
-        'Message:',
-        form.message
-      ].join('\n')
-    )
-
-    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`
-  }
-
   const handleSubmit = async (e) => {
     e.preventDefault()
     setStatus('sending')
     try {
-      const templateParams = {
-        ...form,
-        to_email: CONTACT_EMAIL,
-        reply_to: form.email
+      const response = await fetch(CONTACT_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: JSON.stringify({
+          name: form.name,
+          phone: form.phone,
+          email: form.email,
+          subject: form.subject,
+          message: form.message,
+          _subject: `Website contact: ${form.subject || form.name}`,
+          _template: 'table',
+          _captcha: 'false',
+          _replyto: form.email
+        })
+      })
+
+      if (!response.ok) {
+        throw new Error('Contact form submission failed')
       }
 
-      if (
-        EMAILJS_SERVICE_ID !== 'YOUR_SERVICE_ID' &&
-        EMAILJS_TEMPLATE_ID !== 'YOUR_TEMPLATE_ID' &&
-        EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY'
-      ) {
-        await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY)
-      } else {
-        openMailClient()
-      }
       setStatus('success')
       setForm({ name: '', phone: '', email: '', subject: '', message: '' })
     } catch (err) {

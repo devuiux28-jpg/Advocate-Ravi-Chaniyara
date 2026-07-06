@@ -12,7 +12,7 @@ A premium, responsive, trilingual (English / Hindi / Gujarati) advocate website 
 - React Helmet Async (SEO meta tags)
 - Swiper.js (testimonials carousel)
 - React CountUp (animated statistics)
-- EmailJS (contact form — see setup below)
+- FormSubmit-backed contact form
 
 ## Getting Started
 
@@ -46,20 +46,9 @@ src/
   index.css
 ```
 
-## Configuring the Contact Form (EmailJS)
+## Contact Form
 
-The contact form in `src/components/Contact.jsx` is wired for [EmailJS](https://www.emailjs.com/):
-
-1. Create a free EmailJS account and an email service + template.
-2. Open `src/components/Contact.jsx` and replace:
-   ```js
-   const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID'
-   const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID'
-   const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY'
-   ```
-   with your real credentials.
-3. The template should use `to_email`, `reply_to`, `name`, `phone`, `email`, `subject`, and `message`. Contact form submissions are addressed to `devchaniyara@gmail.com`.
-4. Until EmailJS is configured, the form opens the visitor's email app with the message details prefilled.
+The contact form in `src/components/Contact.jsx` submits to `chaniyaradev@gmail.com` through FormSubmit. On the first submission, FormSubmit may send an activation email to that inbox; confirm it once so future submissions are delivered normally.
 
 ## Editing Content & Translations
 
