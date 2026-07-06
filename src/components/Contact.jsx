@@ -4,6 +4,8 @@ import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { FaMapMarkerAlt, FaPhoneAlt, FaWhatsapp, FaEnvelope, FaClock, FaPaperPlane } from 'react-icons/fa'
 
+const CONTACT_EMAIL = 'devchaniyara@gmail.com'
+
 // Replace with your own EmailJS credentials: https://www.emailjs.com/
 const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID'
 const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID'
@@ -16,15 +18,41 @@ export default function Contact() {
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
+  const openMailClient = () => {
+    const subject = encodeURIComponent(form.subject || 'Website contact request')
+    const body = encodeURIComponent(
+      [
+        `Name: ${form.name}`,
+        `Phone: ${form.phone}`,
+        `Email: ${form.email}`,
+        `Subject: ${form.subject}`,
+        '',
+        'Message:',
+        form.message
+      ].join('\n')
+    )
+
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     setStatus('sending')
     try {
-      if (EMAILJS_SERVICE_ID !== 'YOUR_SERVICE_ID') {
-        await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form, EMAILJS_PUBLIC_KEY)
+      const templateParams = {
+        ...form,
+        to_email: CONTACT_EMAIL,
+        reply_to: form.email
+      }
+
+      if (
+        EMAILJS_SERVICE_ID !== 'YOUR_SERVICE_ID' &&
+        EMAILJS_TEMPLATE_ID !== 'YOUR_TEMPLATE_ID' &&
+        EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY'
+      ) {
+        await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY)
       } else {
-        // Fallback simulation when EmailJS is not yet configured
-        await new Promise((res) => setTimeout(res, 800))
+        openMailClient()
       }
       setStatus('success')
       setForm({ name: '', phone: '', email: '', subject: '', message: '' })
@@ -38,7 +66,7 @@ export default function Contact() {
     { icon: FaMapMarkerAlt, label: t('contact.office'), value: t('contact.officeAddress') },
     { icon: FaPhoneAlt, label: t('contact.phone'), value: '+91 90163 77078' },
     { icon: FaWhatsapp, label: t('contact.whatsapp'), value: '+91 90163 77078' },
-    { icon: FaEnvelope, label: t('contact.email'), value: 'contact@advocaterajeev.com' },
+    { icon: FaEnvelope, label: t('contact.email'), value: CONTACT_EMAIL },
     { icon: FaClock, label: t('contact.hours'), value: t('contact.hoursValue') }
   ]
 

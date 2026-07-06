@@ -58,7 +58,8 @@ The contact form in `src/components/Contact.jsx` is wired for [EmailJS](https://
    const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY'
    ```
    with your real credentials.
-3. Until configured, the form simulates a successful send so you can preview the UI.
+3. The template should use `to_email`, `reply_to`, `name`, `phone`, `email`, `subject`, and `message`. Contact form submissions are addressed to `devchaniyara@gmail.com`.
+4. Until EmailJS is configured, the form opens the visitor's email app with the message details prefilled.
 
 ## Editing Content & Translations
 

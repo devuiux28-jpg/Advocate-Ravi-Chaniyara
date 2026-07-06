@@ -65,7 +65,7 @@ export default function Footer() {
           <ul className="space-y-2.5 text-white/60 text-sm mb-5">
             <li>{t('contact.officeAddress')}</li>
             <li>+91 90163 77078</li>
-            <li>contact@advocaterajeev.com</li>
+            <li>devchaniyara@gmail.com</li>
           </ul>
           <a href="#" className="inline-flex items-center gap-2 text-sm text-gold hover:text-gold-light transition-colors">
             <FaFilePdf /> {t('common.downloadProfile')}
